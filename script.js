@@ -4,7 +4,7 @@ get1.addEventListener('click', async () => {
     let num = document.getElementById("options").selectedIndex;
     let response = axios.get('https://api.themoviedb.org/3/search/movie', {
         params: {
-            api_key: "c09d06bd40e47b140813f600f52a6ac7",
+            api_key: "a75766149f058c94cbde1356c3161786",
             include_adult: "false",
             query: getOption(),
         }
@@ -13,7 +13,7 @@ get1.addEventListener('click', async () => {
     for (let movie of moviesData.data.results) {   
         axios.get(`https://api.themoviedb.org/3/movie/${movie.id}`, {
         params: {
-            api_key: "c09d06bd40e47b140813f600f52a6ac7",
+            api_key: "a75766149f058c94cbde1356c3161786",
             append_to_response: "videos",
         }
         }).then((extraData) => {
