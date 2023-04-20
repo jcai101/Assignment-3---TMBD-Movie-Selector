@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JoeMovies - Your personal Movie Selector</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <form action="">
+      <label for="movies">Choose a Movie</label>
+      <select name="" id="options">
+        <option>Spiderman</option>
+        <option>Star Wars</option>
+        <option>Transformers</option>
+        <option>Matrix</option>
+        <option>Avatar</option>
+        <option>Avengers</option>
+        <option>Justice League</option>
+        <option>Superman</option>
+        <option>Thor</option>
+        <option>Mission Impossible</option>
+      </select>
+    </form>
+
+    <button id="get1">GET</button>
+
+    <h1 id="title"></h1>
+    <p id="basicInfo"></p>
+    <p id="info"></p>
+    <p id="production"></p>
+    <p id="vote"></p>
+    <p id="runtime"></p>
+    <h2 id="ov_label"></h2>
+    <p id="overview"></p>
+
+    <img id="poster" src="" alt="" />
+    <iframe id="trailer" src="" frameborder="0"></iframe>
+  </body>
+</html>
