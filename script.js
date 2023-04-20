@@ -1,4 +1,4 @@
-const movideIds = [557, 11, 1858, 624860, 19995, 299534, 141052, 209112, 10195, 353081 ]
+const movideIds = [502356, 603692, 39514, 677179, 19995, 857, 405775, 4247, 315162, 12162]
 
 get1.addEventListener('click', async () => {
     let num = document.getElementById("options").selectedIndex;
@@ -37,12 +37,13 @@ get1.addEventListener('click', async () => {
                 document.getElementById("info").innerHTML = `Tagline: ${extraData.data.tagline} | Budget: $${extraData.data.budget} | Revenue: $${extraData.data.revenue}`;
                 document.getElementById("vote").innerHTML = `Vote Average: ${movie.vote_average} | Vote Count: ${movie.vote_count}`;
                 document.getElementById("production").innerHTML = `Production Companies: ${extraData.data.production_companies[0].name}`;
-                
-               
-    
-             
-            
-               
+
+
+
+
+
+
+
             }
         });
     }
